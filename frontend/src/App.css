@@ -1,0 +1,119 @@
+.app-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #f9f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  .m{
+    height: 100px;
+    width: 100px;
+  }
+  
+  h1 {
+    color: #0b691f;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-text {
+    width: 80%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+  }
+  
+  .input-text:focus {
+    border-color: #007bff;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .submit-button {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5676f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: large;
+  }
+  
+  .submit-button:disabled {
+    background-color: #ccc;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #6aabfa;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .recommendations-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 7px;
+  }
+  
+  li {
+    background-color: #d6e5ed;
+    padding: 20px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(239, 234, 234, 0.1);
+    font-size: 20pX;
+    font-weight: 600;
+
+    
+    
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items to the next line */
+    gap: 25px; /* Reduced gap for smaller screens */
+    justify-content: center; /* Centers images */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .images {
+      gap: 9px; /* Smaller gap for narrow screens */
+      padding: 10px; /* Smaller padding for narrow screens */
+    }
+  
+    .images img {
+      width: 100%; /* Images adjust to the width of the container */
+      max-width: 400px; /* Optional: Limit the maximum width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
